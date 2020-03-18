@@ -1,43 +1,62 @@
-import enum
+class Constraint:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    @property
+    def eval_constraint(self):
+        return (𝑥𝑗 ≠ 𝑥𝑖) ∧ (𝑥𝑗 ≠ 𝑥𝑖 + (𝑗 − 𝑖)) ∧ (𝑥𝑗 ≠ 𝑥𝑖 − (𝑗 − 𝑖))
 
 
-class ConstraintType(enum.Enum):
-    DISEQUALITY=0,
-    ADJACENCY=1
 
-
-
-class AC:
-
+class AC1:
     def __init__(self, n, d):
+        # Setup of the variables and their domains
         self.domains = {}
         for i in range(n):
             self.domains[i] = [j for j in range(d)]
 
-        self.binary_constraints = {(x, y):[ConstraintType.ADJACENCY]
-                                    for y in range(n) for x in range(n) if x!=y}
+        # Setup of constraint
+        self.constraints =
 
-        keys = self.binary_constraints.keys()
-        for l in range(0, len(keys), 2):
-            self.binary_constraints[keys[l]].append(ConstraintType.DISEQUALITY)
+    def revise(self, i, j):
+        changed = False
+        for di in self.domains[i]:
+            supported = False
+
+            print(self.domains)
+            print(j)
+
+            if any([True if di != dj else False for dj in self.domains[j] if
+                    self.binary_constraints[(i, j)].count(ConstraintType.DISEQUALITY) > 0]):
+                supported = True
+
+            if not any([True if abs(di - dj) > 1 else False for dj in self.domains[j] if
+                        self.binary_constraints[(i, j)].count(ConstraintType.ADJACENCY) > 0]):
+                self.domains.pop(di)
+                supported = True
+
+            if not supported:
+                self.domains.pop(di)
+
+        if len(self.domains) == 0:
+            return EnvironmentError("Failed to find solution")
+        return changed
 
 
-        print(self.domains)
-        print(self.binary_constraints)
 
 
-    def revise(i, j):
-        bin_cons = self.binary_constraints[(i,j)]
-        for 
 
+
+    def run_loop(self):
+        repeat = True
+        while repeat:
+            repeat = False
+            for arc in self.arcs:
+                if self.revise(arc[0], arc[1]):
+                    repeat = True
 
 
 if __name__ == "__main__":
-    ac = AC(8, 8)
-
-
-        
-
-    
-
-
+    ac = AC1(8, 8)
+    ac.run_loop()
