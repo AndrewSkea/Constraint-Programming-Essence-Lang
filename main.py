@@ -1,62 +1,63 @@
-class Constraint:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+class Arc:
+    def __init__(self, dv1, dv2, constraints):
+        self.dv1 = dv1
+        self.dv2 = dv2
+        self.constraints = constraints
 
-    @property
-    def eval_constraint(self):
-        return (𝑥𝑗 ≠ 𝑥𝑖) ∧ (𝑥𝑗 ≠ 𝑥𝑖 + (𝑗 − 𝑖)) ∧ (𝑥𝑗 ≠ 𝑥𝑖 − (𝑗 − 𝑖))
-
+    def __str__(self):
+        return "arc({},{})".format(self.dv1, self.dv2)
 
 
 class AC1:
-    def __init__(self, n, d):
-        # Setup of the variables and their domains
-        self.domains = {}
-        for i in range(n):
-            self.domains[i] = [j for j in range(d)]
+    def __init__(self, n):
+        # Variable setup
+        self.n = n
 
-        # Setup of constraint
-        self.constraints =
+        # Create the decision variables
+        self.dv = {i: [j for j in range(1, self.n + 1)] for i in range(1, self.n + 1)}
 
-    def revise(self, i, j):
+        # Create the constraint network
+        self.arcs = []
+        for i in range(self.n):
+            for j in range(self.n):
+                if i == j: continue
+                c = []
+                for x in range(1, self.n + 1):
+                    for y in range(1, self.n + 1):
+                        if x != y and x != y + (i - j) and x != y - (i - j):
+                            c.append((x, y))
+                print(c)
+                self.arcs.append(Arc(i + 1, j + 1, c))
+
+    def revise(self, arc):
         changed = False
-        for di in self.domains[i]:
+        for di in self.dv[arc.dv1]:
             supported = False
 
-            print(self.domains)
-            print(j)
-
-            if any([True if di != dj else False for dj in self.domains[j] if
-                    self.binary_constraints[(i, j)].count(ConstraintType.DISEQUALITY) > 0]):
-                supported = True
-
-            if not any([True if abs(di - dj) > 1 else False for dj in self.domains[j] if
-                        self.binary_constraints[(i, j)].count(ConstraintType.ADJACENCY) > 0]):
-                self.domains.pop(di)
-                supported = True
+            for dj in self.dv[arc.dv2]:
+                if (di, dj) not in arc.constraints:
+                    supported = True
 
             if not supported:
-                self.domains.pop(di)
-
-        if len(self.domains) == 0:
-            return EnvironmentError("Failed to find solution")
+                self.dv[arc.dv1].remove(di)
+                print("Removing value {} from D({})".format(di, arc.dv1))
+                changed = True
+                print("Revising {}".format(str(arc)))
+        if len(self.dv[arc.dv1]) == 0:
+            raise Exception("No solution exists!")
         return changed
 
-
-
-
-
-
-    def run_loop(self):
+    def ac1(self):
         repeat = True
         while repeat:
             repeat = False
             for arc in self.arcs:
-                if self.revise(arc[0], arc[1]):
+                if self.revise(arc):
                     repeat = True
+
+        print("Finished:\n{}".format(self.dv))
 
 
 if __name__ == "__main__":
-    ac = AC1(8, 8)
-    ac.run_loop()
+    ac = AC1(6)
+    ac.ac1()
