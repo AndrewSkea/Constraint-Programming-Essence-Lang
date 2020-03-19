@@ -14,7 +14,14 @@ class AC1:
         self.n = n
 
         # Create the decision variables
-        self.dv = {i: [j for j in range(1, self.n + 1)] for i in range(1, self.n + 1)}
+        self.dv = {
+            1: [2],
+            2: [4],
+            3: [6],
+            4: [j for j in range(1, self.n + 1)],
+            5: [j for j in range(1, self.n + 1)],
+            6: [j for j in range(1, self.n + 1)]
+        }
 
         # Create the constraint network
         self.arcs = []
@@ -26,23 +33,22 @@ class AC1:
                     for y in range(1, self.n + 1):
                         if x != y and x != y + (i - j) and x != y - (i - j):
                             c.append((x, y))
-                print(c)
                 self.arcs.append(Arc(i + 1, j + 1, c))
 
     def revise(self, arc):
+        print("Revising {}".format(str(arc)))
         changed = False
         for di in self.dv[arc.dv1]:
             supported = False
 
             for dj in self.dv[arc.dv2]:
-                if (di, dj) not in arc.constraints:
+                if (di, dj) in arc.constraints:
                     supported = True
 
             if not supported:
                 self.dv[arc.dv1].remove(di)
                 print("Removing value {} from D({})".format(di, arc.dv1))
                 changed = True
-                print("Revising {}".format(str(arc)))
         if len(self.dv[arc.dv1]) == 0:
             raise Exception("No solution exists!")
         return changed
