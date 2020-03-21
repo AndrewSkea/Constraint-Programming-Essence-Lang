@@ -9,20 +9,11 @@ class Arc:
 
 
 class AC1:
-    def __init__(self, n):
+    def __init__(self, n, dv):
         # Variable setup
         self.n = n
-
-        # Create the decision variables
-        self.dv = {
-            1: [2],
-            2: [4],
-            3: [6],
-            4: [j for j in range(1, self.n + 1)],
-            5: [j for j in range(1, self.n + 1)],
-            6: [j for j in range(1, self.n + 1)]
-        }
-
+        self.log = ""
+        self.dv = dv
         # Create the constraint network
         self.arcs = []
         for i in range(self.n):
@@ -36,7 +27,7 @@ class AC1:
                 self.arcs.append(Arc(i + 1, j + 1, c))
 
     def revise(self, arc):
-        print("Revising {}".format(str(arc)))
+        self.log += "\nRevising {}".format(str(arc))
         changed = False
         for di in self.dv[arc.dv1]:
             supported = False
@@ -47,13 +38,13 @@ class AC1:
 
             if not supported:
                 self.dv[arc.dv1].remove(di)
-                print("Removing value {} from D({})".format(di, arc.dv1))
+                self.log += "\nRemoving value {} from D({})".format(di, arc.dv1)
                 changed = True
         if len(self.dv[arc.dv1]) == 0:
-            raise Exception("No solution exists!")
+            self.log += "\nNo solution exists!"
         return changed
 
-    def ac1(self):
+    def ac1(self, output_no):
         repeat = True
         while repeat:
             repeat = False
@@ -61,9 +52,38 @@ class AC1:
                 if self.revise(arc):
                     repeat = True
 
-        print("Finished:\n{}".format(self.dv))
+        self.log += "\nFinished:\n{}".format(self.dv)
 
+        with open("./output_{}.txt".format(output_no), "w") as f:
+                f.write(self.log)
 
 if __name__ == "__main__":
-    ac = AC1(6)
-    ac.ac1()
+    size = 6
+    dvs = [
+        {
+            1: [1],
+            2: [2],
+            3: [j for j in range(1, size+ 1)],
+            4: [j for j in range(1, size+ 1)],
+            5: [j for j in range(1, size + 1)],
+            6: [j for j in range(1, size + 1)]
+        }, {
+            1: [1],
+            2: [4],
+            3: [j for j in range(1, size+ 1)],
+            4: [j for j in range(1, size+ 1)],
+            5: [j for j in range(1, size + 1)],
+            6: [j for j in range(1, size + 1)]
+        }, {
+            1: [2],
+            2: [4],
+            3: [6],
+            4: [j for j in range(1, size+ 1)],
+            5: [j for j in range(1, size + 1)],
+            6: [j for j in range(1, size + 1)]
+        }
+    ]
+
+    for i, dv in enumerate(dvs):
+        ac = AC1(size, dv)
+        ac.ac1(i)

@@ -1,0 +1,206 @@
+
+Revising arc(1,2)
+Revising arc(1,3)
+Revising arc(1,4)
+Revising arc(1,5)
+Revising arc(1,6)
+Revising arc(2,1)
+Revising arc(2,3)
+Revising arc(2,4)
+Revising arc(2,5)
+Revising arc(2,6)
+Revising arc(3,1)
+Removing value 1 from D(3)
+Removing value 3 from D(3)
+Revising arc(3,2)
+Removing value 4 from D(3)
+Revising arc(3,4)
+Revising arc(3,5)
+Revising arc(3,6)
+Revising arc(4,1)
+Removing value 1 from D(4)
+Removing value 4 from D(4)
+Revising arc(4,2)
+Removing value 2 from D(4)
+Removing value 6 from D(4)
+Revising arc(4,3)
+Revising arc(4,5)
+Revising arc(4,6)
+Revising arc(5,1)
+Removing value 1 from D(5)
+Removing value 5 from D(5)
+Revising arc(5,2)
+Removing value 4 from D(5)
+Revising arc(5,3)
+Revising arc(5,4)
+Revising arc(5,6)
+Revising arc(6,1)
+Removing value 1 from D(6)
+Removing value 6 from D(6)
+Revising arc(6,2)
+Removing value 4 from D(6)
+Revising arc(6,3)
+Revising arc(6,4)
+Removing value 3 from D(6)
+Revising arc(6,5)
+Revising arc(1,2)
+Revising arc(1,3)
+Revising arc(1,4)
+Revising arc(1,5)
+Revising arc(1,6)
+Revising arc(2,1)
+Revising arc(2,3)
+Revising arc(2,4)
+Revising arc(2,5)
+Revising arc(2,6)
+Revising arc(3,1)
+Revising arc(3,2)
+Removing value 5 from D(3)
+Revising arc(3,4)
+Revising arc(3,5)
+Revising arc(3,6)
+Removing value 2 from D(3)
+Revising arc(4,1)
+Revising arc(4,2)
+Revising arc(4,3)
+Removing value 5 from D(4)
+Revising arc(4,5)
+Revising arc(4,6)
+Revising arc(5,1)
+Revising arc(5,2)
+Revising arc(5,3)
+Removing value 6 from D(5)
+Revising arc(5,4)
+Removing value 2 from D(5)
+Revising arc(5,6)
+Revising arc(6,1)
+Revising arc(6,2)
+Revising arc(6,3)
+Revising arc(6,4)
+Removing value 5 from D(6)
+Revising arc(6,5)
+Removing value 2 from D(6)
+No solution exists!
+Revising arc(1,2)
+Revising arc(1,3)
+Revising arc(1,4)
+Revising arc(1,5)
+Revising arc(1,6)
+Removing value 1 from D(1)
+No solution exists!
+Revising arc(2,1)
+Removing value 4 from D(2)
+No solution exists!
+Revising arc(2,3)
+No solution exists!
+Revising arc(2,4)
+No solution exists!
+Revising arc(2,5)
+No solution exists!
+Revising arc(2,6)
+No solution exists!
+Revising arc(3,1)
+Removing value 6 from D(3)
+No solution exists!
+Revising arc(3,2)
+No solution exists!
+Revising arc(3,4)
+No solution exists!
+Revising arc(3,5)
+No solution exists!
+Revising arc(3,6)
+No solution exists!
+Revising arc(4,1)
+Removing value 3 from D(4)
+No solution exists!
+Revising arc(4,2)
+No solution exists!
+Revising arc(4,3)
+No solution exists!
+Revising arc(4,5)
+No solution exists!
+Revising arc(4,6)
+No solution exists!
+Revising arc(5,1)
+Removing value 3 from D(5)
+No solution exists!
+Revising arc(5,2)
+No solution exists!
+Revising arc(5,3)
+No solution exists!
+Revising arc(5,4)
+No solution exists!
+Revising arc(5,6)
+No solution exists!
+Revising arc(6,1)
+No solution exists!
+Revising arc(6,2)
+No solution exists!
+Revising arc(6,3)
+No solution exists!
+Revising arc(6,4)
+No solution exists!
+Revising arc(6,5)
+No solution exists!
+Revising arc(1,2)
+No solution exists!
+Revising arc(1,3)
+No solution exists!
+Revising arc(1,4)
+No solution exists!
+Revising arc(1,5)
+No solution exists!
+Revising arc(1,6)
+No solution exists!
+Revising arc(2,1)
+No solution exists!
+Revising arc(2,3)
+No solution exists!
+Revising arc(2,4)
+No solution exists!
+Revising arc(2,5)
+No solution exists!
+Revising arc(2,6)
+No solution exists!
+Revising arc(3,1)
+No solution exists!
+Revising arc(3,2)
+No solution exists!
+Revising arc(3,4)
+No solution exists!
+Revising arc(3,5)
+No solution exists!
+Revising arc(3,6)
+No solution exists!
+Revising arc(4,1)
+No solution exists!
+Revising arc(4,2)
+No solution exists!
+Revising arc(4,3)
+No solution exists!
+Revising arc(4,5)
+No solution exists!
+Revising arc(4,6)
+No solution exists!
+Revising arc(5,1)
+No solution exists!
+Revising arc(5,2)
+No solution exists!
+Revising arc(5,3)
+No solution exists!
+Revising arc(5,4)
+No solution exists!
+Revising arc(5,6)
+No solution exists!
+Revising arc(6,1)
+No solution exists!
+Revising arc(6,2)
+No solution exists!
+Revising arc(6,3)
+No solution exists!
+Revising arc(6,4)
+No solution exists!
+Revising arc(6,5)
+No solution exists!
+Finished:
+{1: [], 2: [], 3: [], 4: [], 5: [], 6: []}
