@@ -13,3 +13,9 @@ letting grid be [
   [false, false, false],
   [false, false, false],
 ]
+
+
+letting p be 3
+letting q be 3
+letting a be 1
+letting b be 1

@@ -2,285 +2,524 @@ MINION 3
 # CSETopLevel_number = 0
 # CSETopLevel_eliminated_expressions = 0
 # CSETopLevel_total_size = 0
-# CSE_active_number = 71
-# CSE_active_eliminated_expressions = 192
-# CSE_active_total_size = 220
+# CSE_active_number = 0
+# CSE_active_eliminated_expressions = 0
+# CSE_active_total_size = 0
 **VARIABLES**
 DISCRETE move_00000 #
-{2..3}
-DISCRETE move_00001 #
-{2..3}
-DISCRETE move_00002 #
-{1..4}
-DISCRETE move_00003 #
-{1..4}
-DISCRETE move_00004 #
-{1..4}
-DISCRETE move_00005 #
-{1..4}
-DISCRETE move_00006 #
-{1..4}
-DISCRETE move_00007 #
-{1..4}
-DISCRETE xPos_00001 #
-{1..2}
-DISCRETE xPos_00002 #
-{1..3}
-DISCRETE xPos_00003 #
-{1..3}
-DISCRETE xPos_00004 #
-{1..3}
-DISCRETE xPos_00005 #
-{1..3}
-DISCRETE xPos_00006 #
-{1..3}
-DISCRETE xPos_00007 #
-{1..3}
-DISCRETE xPos_00008 #
-{1..3}
-DISCRETE yPos_00001 #
-{1..2}
-DISCRETE yPos_00002 #
-{1..3}
-DISCRETE yPos_00003 #
-{1..3}
-DISCRETE yPos_00004 #
-{1..3}
-DISCRETE yPos_00005 #
-{1..3}
-DISCRETE yPos_00006 #
-{1..3}
-DISCRETE yPos_00007 #
-{1..3}
-DISCRETE yPos_00008 #
-{1..3}
-BOOL bState_00002_00001_00002 #
-BOOL bState_00002_00001_00003 #
-BOOL bState_00002_00002_00001 #
-BOOL bState_00002_00002_00002 #
-BOOL bState_00002_00003_00001 #
-BOOL bState_00003_00001_00002 #
-BOOL bState_00003_00001_00003 #
-BOOL bState_00003_00002_00001 #
-BOOL bState_00003_00002_00002 #
-BOOL bState_00003_00002_00003 #
-BOOL bState_00003_00003_00001 #
-BOOL bState_00003_00003_00002 #
-BOOL bState_00003_00003_00003 #
-BOOL bState_00004_00001_00002 #
-BOOL bState_00004_00001_00003 #
-BOOL bState_00004_00002_00001 #
-BOOL bState_00004_00002_00002 #
-BOOL bState_00004_00002_00003 #
-BOOL bState_00004_00003_00001 #
-BOOL bState_00004_00003_00002 #
-BOOL bState_00004_00003_00003 #
-BOOL bState_00005_00001_00002 #
-BOOL bState_00005_00001_00003 #
-BOOL bState_00005_00002_00001 #
-BOOL bState_00005_00002_00002 #
-BOOL bState_00005_00002_00003 #
-BOOL bState_00005_00003_00001 #
-BOOL bState_00005_00003_00002 #
-BOOL bState_00005_00003_00003 #
-BOOL bState_00006_00001_00002 #
-BOOL bState_00006_00001_00003 #
-BOOL bState_00006_00002_00001 #
-BOOL bState_00006_00002_00002 #
-BOOL bState_00006_00002_00003 #
-BOOL bState_00006_00003_00001 #
-BOOL bState_00006_00003_00002 #
-BOOL bState_00006_00003_00003 #
-BOOL bState_00007_00001_00002 #
-BOOL bState_00007_00001_00003 #
-BOOL bState_00007_00002_00001 #
-BOOL bState_00007_00002_00002 #
-BOOL bState_00007_00002_00003 #
-BOOL bState_00007_00003_00001 #
-BOOL bState_00007_00003_00002 #
-BOOL bState_00007_00003_00003 #
-DISCRETE aux11 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00003 + xPos_00003)
-{0..8}
-DISCRETE aux12 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00002 + xPos_00002)
-{2..6}
-DISCRETE aux13 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00005 + xPos_00005)
-{0..8}
-DISCRETE aux14 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00004 + xPos_00004)
-{0..8}
-DISCRETE aux15 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00001 + xPos_00001)
-{1..3}
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
 **CONSTRAINTS**
-w-inintervalset(aux15, [1,1,3,3])
+false()
 **VARIABLES**
-DISCRETE aux16 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00007 + xPos_00007)
-{0..8}
-DISCRETE aux17 #Active-CSE: 2 occurrences of this expression or equivalent: (-4 + 3*yPos_00006 + xPos_00006)
-{0..8}
-DISCRETE aux18 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00007)
-{0..2}
-DISCRETE aux19 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00003)
-{2..4}
-DISCRETE aux20 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00004)
-{2..4}
-DISCRETE aux21 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00002)
-{2..4}
-DISCRETE aux22 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00007)
-{2..4}
-DISCRETE aux23 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00005)
-{2..4}
-DISCRETE aux24 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + yPos_00006)
-{2..4}
-DISCRETE aux25 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00002)
-{0..2}
-DISCRETE aux26 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00003)
-{0..2}
-DISCRETE aux27 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00004)
-{0..2}
-DISCRETE aux28 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00006)
-{0..2}
-DISCRETE aux29 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + yPos_00005)
-{0..2}
-DISCRETE aux30 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00006)
-{0..2}
-DISCRETE aux31 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00007)
-{0..2}
-DISCRETE aux32 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00004)
-{0..2}
-DISCRETE aux33 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00005)
-{0..2}
-DISCRETE aux34 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00003)
-{0..2}
-DISCRETE aux35 #Active-CSE: 2 occurrences of this expression or equivalent: (-1 + xPos_00002)
-{0..2}
-DISCRETE aux36 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00003)
-{2..4}
-DISCRETE aux37 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00002)
-{2..4}
-DISCRETE aux38 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00006)
-{2..4}
-DISCRETE aux39 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00005)
-{2..4}
-DISCRETE aux40 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00007)
-{2..4}
-DISCRETE aux41 #Active-CSE: 2 occurrences of this expression or equivalent: (1 + xPos_00004)
-{2..4}
-BOOL aux42 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00006=xPos_00007)
-BOOL aux43 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00007=xPos_00008)
-BOOL aux44 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00004=xPos_00005)
-BOOL aux45 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00005=xPos_00006)
-BOOL aux46 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00002=xPos_00003)
-BOOL aux47 #Active-CSE: 2 occurrences of this expression or equivalent: (xPos_00003=xPos_00004)
-BOOL aux48 #Active-CSE: 2 occurrences of this expression or equivalent: (move_00000=2)
-BOOL aux49 #Active-CSE: 2 occurrences of this expression or equivalent: (move_00000=3)
-BOOL aux50 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00006=4)
-BOOL aux51 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00006=3)
-BOOL aux52 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00006=2)
-BOOL aux53 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00006=1)
-BOOL aux54 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00005=4)
-BOOL aux55 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00005=3)
-BOOL aux56 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00005=2)
-BOOL aux57 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00007=4)
-BOOL aux58 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00007=3)
-BOOL aux59 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00007=2)
-BOOL aux60 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00007=1)
-BOOL aux61 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00003=3)
-BOOL aux62 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00003=2)
-BOOL aux63 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00003=1)
-BOOL aux64 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00003=4)
-BOOL aux65 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00005=1)
-BOOL aux66 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00004=4)
-BOOL aux67 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00004=3)
-BOOL aux68 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00004=2)
-BOOL aux69 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00004=1)
-BOOL aux70 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00002=4)
-BOOL aux71 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00002=3)
-BOOL aux72 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00002=2)
-BOOL aux73 #Active-CSE: 4 occurrences of this expression or equivalent: (move_00002=1)
-BOOL aux74 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00002=yPos_00003)
-BOOL aux75 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00006=yPos_00007)
-BOOL aux76 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00005=yPos_00006)
-BOOL aux77 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00004=yPos_00005)
-BOOL aux78 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00003=yPos_00004)
-BOOL aux79 #Active-CSE: 2 occurrences of this expression or equivalent: (yPos_00007=yPos_00008)
-BOOL aux80 #Active-CSE: 3 occurrences of this expression or equivalent: (move_00001=2)
-BOOL aux81 #Active-CSE: 3 occurrences of this expression or equivalent: (move_00001=3)
-BOOL aux82 #((2 != yPos_00001) \/ (1 != xPos_00001))
-BOOL aux83 #((1 != yPos_00001) \/ (2 != xPos_00001))
-BOOL aux85 #((3 != yPos_00002) \/ (1 != xPos_00002))
-BOOL aux87 #((2 != yPos_00002) \/ (2 != xPos_00002))
-BOOL aux88 #((1 != yPos_00002) \/ (3 != xPos_00002))
-BOOL aux89 #((2 != yPos_00003) \/ (1 != xPos_00003))
-BOOL aux90 #((3 != yPos_00003) \/ (1 != xPos_00003))
-BOOL aux91 #((1 != yPos_00003) \/ (2 != xPos_00003))
-BOOL aux92 #((2 != yPos_00003) \/ (2 != xPos_00003))
-BOOL aux93 #((3 != yPos_00003) \/ (2 != xPos_00003))
-BOOL aux94 #((1 != yPos_00003) \/ (3 != xPos_00003))
-BOOL aux95 #((2 != yPos_00003) \/ (3 != xPos_00003))
-BOOL aux96 #((3 != yPos_00003) \/ (3 != xPos_00003))
-DISCRETE aux97 #(-7 + 3*yPos_00002 + xPos_00002)
-{-1..3}
-DISCRETE aux98 #(-5 + 3*yPos_00002 + xPos_00002)
-{1..5}
-BOOL aux99 #((2 != yPos_00004) \/ (1 != xPos_00004))
-BOOL aux100 #((3 != yPos_00004) \/ (1 != xPos_00004))
-BOOL aux101 #((1 != yPos_00004) \/ (2 != xPos_00004))
-BOOL aux102 #((2 != yPos_00004) \/ (2 != xPos_00004))
-BOOL aux103 #((3 != yPos_00004) \/ (2 != xPos_00004))
-BOOL aux104 #((1 != yPos_00004) \/ (3 != xPos_00004))
-BOOL aux105 #((2 != yPos_00004) \/ (3 != xPos_00004))
-BOOL aux106 #((3 != yPos_00004) \/ (3 != xPos_00004))
-DISCRETE aux107 #(-7 + 3*yPos_00003 + xPos_00003)
-{-3..5}
-DISCRETE aux108 #(-5 + 3*yPos_00003 + xPos_00003)
-{-1..7}
-BOOL aux109 #((2 != yPos_00005) \/ (1 != xPos_00005))
-BOOL aux110 #((3 != yPos_00005) \/ (1 != xPos_00005))
-BOOL aux111 #((1 != yPos_00005) \/ (2 != xPos_00005))
-BOOL aux112 #((2 != yPos_00005) \/ (2 != xPos_00005))
-BOOL aux113 #((3 != yPos_00005) \/ (2 != xPos_00005))
-BOOL aux114 #((1 != yPos_00005) \/ (3 != xPos_00005))
-BOOL aux115 #((2 != yPos_00005) \/ (3 != xPos_00005))
-BOOL aux116 #((3 != yPos_00005) \/ (3 != xPos_00005))
-DISCRETE aux117 #(-7 + 3*yPos_00004 + xPos_00004)
-{-3..5}
-DISCRETE aux118 #(-5 + 3*yPos_00004 + xPos_00004)
-{-1..7}
-BOOL aux119 #((2 != yPos_00006) \/ (1 != xPos_00006))
-BOOL aux120 #((3 != yPos_00006) \/ (1 != xPos_00006))
-BOOL aux121 #((1 != yPos_00006) \/ (2 != xPos_00006))
-BOOL aux122 #((2 != yPos_00006) \/ (2 != xPos_00006))
-BOOL aux123 #((3 != yPos_00006) \/ (2 != xPos_00006))
-BOOL aux124 #((1 != yPos_00006) \/ (3 != xPos_00006))
-BOOL aux125 #((2 != yPos_00006) \/ (3 != xPos_00006))
-BOOL aux126 #((3 != yPos_00006) \/ (3 != xPos_00006))
-DISCRETE aux127 #(-7 + 3*yPos_00005 + xPos_00005)
-{-3..5}
-DISCRETE aux128 #(-5 + 3*yPos_00005 + xPos_00005)
-{-1..7}
-BOOL aux129 #((2 != yPos_00007) \/ (1 != xPos_00007))
-BOOL aux130 #((3 != yPos_00007) \/ (1 != xPos_00007))
-BOOL aux131 #((1 != yPos_00007) \/ (2 != xPos_00007))
-BOOL aux132 #((2 != yPos_00007) \/ (2 != xPos_00007))
-BOOL aux133 #((3 != yPos_00007) \/ (2 != xPos_00007))
-BOOL aux134 #((1 != yPos_00007) \/ (3 != xPos_00007))
-BOOL aux135 #((2 != yPos_00007) \/ (3 != xPos_00007))
-BOOL aux136 #((3 != yPos_00007) \/ (3 != xPos_00007))
-DISCRETE aux137 #(-7 + 3*yPos_00006 + xPos_00006)
-{-3..5}
-DISCRETE aux138 #(-5 + 3*yPos_00006 + xPos_00006)
-{-1..7}
-BOOL aux139 #((2 != yPos_00008) \/ (1 != xPos_00008))
-BOOL aux140 #((3 != yPos_00008) \/ (1 != xPos_00008))
-BOOL aux141 #((1 != yPos_00008) \/ (2 != xPos_00008))
-BOOL aux142 #((2 != yPos_00008) \/ (2 != xPos_00008))
-BOOL aux143 #((3 != yPos_00008) \/ (2 != xPos_00008))
-BOOL aux144 #((1 != yPos_00008) \/ (3 != xPos_00008))
-BOOL aux145 #((2 != yPos_00008) \/ (3 != xPos_00008))
-BOOL aux146 #((3 != yPos_00008) \/ (3 != xPos_00008))
-DISCRETE aux147 #(-7 + 3*yPos_00007 + xPos_00007)
-{-3..5}
-DISCRETE aux148 #(-5 + 3*yPos_00007 + xPos_00007)
-{-1..7}
+DISCRETE move_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00004 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00005 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00006 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00007 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE move_00008 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00000 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00004 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00005 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00006 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00007 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00008 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE xPos_00009 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00000 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00004 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00005 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00006 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00007 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00008 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE yPos_00009 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+BOOL bState_00000_00001_00001 #
+BOOL bState_00000_00001_00002 #
+BOOL bState_00000_00001_00003 #
+BOOL bState_00000_00002_00001 #
+BOOL bState_00000_00002_00002 #
+BOOL bState_00000_00002_00003 #
+BOOL bState_00000_00003_00001 #
+BOOL bState_00000_00003_00002 #
+BOOL bState_00000_00003_00003 #
+DISCRETE bState_00001_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00001_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00002_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00003_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00004_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00005_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00006_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00007_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00001_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00001_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00001_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00002_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00002_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00002_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00003_00001 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00003_00002 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
+DISCRETE bState_00008_00003_00003 #
+{0..0}  #  This is an empty domain. Faking that by using 0..0 and the false() constraint below.
+**CONSTRAINTS**
+false()
+**VARIABLES**
 **TUPLELIST**
 grid 3 3
 0 0 0 
@@ -289,400 +528,7 @@ grid 3 3
 **VARIABLES**
 ALIAS grid[3,3]=[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 **SEARCH**
-PRINT[[move_00000],[move_00001],[move_00002],[move_00003],[move_00004],[move_00005],[move_00006],[move_00007],[xPos_00001],[xPos_00002],[xPos_00003],[xPos_00004],[xPos_00005],[xPos_00006],[xPos_00007],[xPos_00008],[yPos_00001],[yPos_00002],[yPos_00003],[yPos_00004],[yPos_00005],[yPos_00006],[yPos_00007],[yPos_00008],[bState_00002_00001_00002],[bState_00002_00001_00003],[bState_00002_00002_00001],[bState_00002_00002_00002],[bState_00002_00003_00001],[bState_00003_00001_00002],[bState_00003_00001_00003],[bState_00003_00002_00001],[bState_00003_00002_00002],[bState_00003_00002_00003],[bState_00003_00003_00001],[bState_00003_00003_00002],[bState_00003_00003_00003],[bState_00004_00001_00002],[bState_00004_00001_00003],[bState_00004_00002_00001],[bState_00004_00002_00002],[bState_00004_00002_00003],[bState_00004_00003_00001],[bState_00004_00003_00002],[bState_00004_00003_00003],[bState_00005_00001_00002],[bState_00005_00001_00003],[bState_00005_00002_00001],[bState_00005_00002_00002],[bState_00005_00002_00003],[bState_00005_00003_00001],[bState_00005_00003_00002],[bState_00005_00003_00003],[bState_00006_00001_00002],[bState_00006_00001_00003],[bState_00006_00002_00001],[bState_00006_00002_00002],[bState_00006_00002_00003],[bState_00006_00003_00001],[bState_00006_00003_00002],[bState_00006_00003_00003],[bState_00007_00001_00002],[bState_00007_00001_00003],[bState_00007_00002_00001],[bState_00007_00002_00002],[bState_00007_00002_00003],[bState_00007_00003_00001],[bState_00007_00003_00002],[bState_00007_00003_00003]]
-VARORDER STATIC [move_00000, move_00001, move_00002, move_00003, move_00004, move_00005, move_00006, move_00007, xPos_00001, xPos_00002, xPos_00003, xPos_00004, xPos_00005, xPos_00006, xPos_00007, xPos_00008, yPos_00001, yPos_00002, yPos_00003, yPos_00004, yPos_00005, yPos_00006, yPos_00007, yPos_00008, bState_00002_00001_00002, bState_00002_00002_00001, bState_00002_00001_00003, bState_00002_00002_00002, bState_00002_00003_00001, bState_00003_00001_00002, bState_00003_00001_00003, bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003, bState_00003_00003_00001, bState_00003_00003_00002, bState_00003_00003_00003, bState_00004_00001_00002, bState_00004_00001_00003, bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003, bState_00004_00003_00001, bState_00004_00003_00002, bState_00004_00003_00003, bState_00005_00001_00002, bState_00005_00001_00003, bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003, bState_00005_00003_00001, bState_00005_00003_00002, bState_00005_00003_00003, bState_00006_00001_00002, bState_00006_00001_00003, bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003, bState_00006_00003_00001, bState_00006_00003_00002, bState_00006_00003_00003, bState_00007_00001_00002, bState_00007_00001_00003, bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003, bState_00007_00003_00001, bState_00007_00003_00002, bState_00007_00003_00003]
+PRINT[[move_00000],[move_00001],[move_00002],[move_00003],[move_00004],[move_00005],[move_00006],[move_00007],[move_00008],[xPos_00000],[xPos_00001],[xPos_00002],[xPos_00003],[xPos_00004],[xPos_00005],[xPos_00006],[xPos_00007],[xPos_00008],[xPos_00009],[yPos_00000],[yPos_00001],[yPos_00002],[yPos_00003],[yPos_00004],[yPos_00005],[yPos_00006],[yPos_00007],[yPos_00008],[yPos_00009],[bState_00000_00001_00001],[bState_00000_00001_00002],[bState_00000_00001_00003],[bState_00000_00002_00001],[bState_00000_00002_00002],[bState_00000_00002_00003],[bState_00000_00003_00001],[bState_00000_00003_00002],[bState_00000_00003_00003],[bState_00001_00001_00001],[bState_00001_00001_00002],[bState_00001_00001_00003],[bState_00001_00002_00001],[bState_00001_00002_00002],[bState_00001_00002_00003],[bState_00001_00003_00001],[bState_00001_00003_00002],[bState_00001_00003_00003],[bState_00002_00001_00001],[bState_00002_00001_00002],[bState_00002_00001_00003],[bState_00002_00002_00001],[bState_00002_00002_00002],[bState_00002_00002_00003],[bState_00002_00003_00001],[bState_00002_00003_00002],[bState_00002_00003_00003],[bState_00003_00001_00001],[bState_00003_00001_00002],[bState_00003_00001_00003],[bState_00003_00002_00001],[bState_00003_00002_00002],[bState_00003_00002_00003],[bState_00003_00003_00001],[bState_00003_00003_00002],[bState_00003_00003_00003],[bState_00004_00001_00001],[bState_00004_00001_00002],[bState_00004_00001_00003],[bState_00004_00002_00001],[bState_00004_00002_00002],[bState_00004_00002_00003],[bState_00004_00003_00001],[bState_00004_00003_00002],[bState_00004_00003_00003],[bState_00005_00001_00001],[bState_00005_00001_00002],[bState_00005_00001_00003],[bState_00005_00002_00001],[bState_00005_00002_00002],[bState_00005_00002_00003],[bState_00005_00003_00001],[bState_00005_00003_00002],[bState_00005_00003_00003],[bState_00006_00001_00001],[bState_00006_00001_00002],[bState_00006_00001_00003],[bState_00006_00002_00001],[bState_00006_00002_00002],[bState_00006_00002_00003],[bState_00006_00003_00001],[bState_00006_00003_00002],[bState_00006_00003_00003],[bState_00007_00001_00001],[bState_00007_00001_00002],[bState_00007_00001_00003],[bState_00007_00002_00001],[bState_00007_00002_00002],[bState_00007_00002_00003],[bState_00007_00003_00001],[bState_00007_00003_00002],[bState_00007_00003_00003],[bState_00008_00001_00001],[bState_00008_00001_00002],[bState_00008_00001_00003],[bState_00008_00002_00001],[bState_00008_00002_00002],[bState_00008_00002_00003],[bState_00008_00003_00001],[bState_00008_00003_00002],[bState_00008_00003_00003]]
+VARORDER STATIC [move_00000, move_00001, move_00002, move_00003, move_00004, move_00005, move_00006, move_00007, move_00008, xPos_00000, xPos_00001, xPos_00002, xPos_00003, xPos_00004, xPos_00005, xPos_00006, xPos_00007, xPos_00008, xPos_00009, yPos_00000, yPos_00001, yPos_00002, yPos_00003, yPos_00004, yPos_00005, yPos_00006, yPos_00007, yPos_00008, yPos_00009, bState_00000_00001_00001, bState_00000_00001_00002, bState_00000_00001_00003, bState_00000_00002_00001, bState_00000_00002_00002, bState_00000_00002_00003, bState_00000_00003_00001, bState_00000_00003_00002, bState_00000_00003_00003, bState_00001_00001_00001, bState_00001_00001_00002, bState_00001_00001_00003, bState_00001_00002_00001, bState_00001_00002_00002, bState_00001_00002_00003, bState_00001_00003_00001, bState_00001_00003_00002, bState_00001_00003_00003, bState_00002_00001_00001, bState_00002_00001_00002, bState_00002_00001_00003, bState_00002_00002_00001, bState_00002_00002_00002, bState_00002_00002_00003, bState_00002_00003_00001, bState_00002_00003_00002, bState_00002_00003_00003, bState_00003_00001_00001, bState_00003_00001_00002, bState_00003_00001_00003, bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003, bState_00003_00003_00001, bState_00003_00003_00002, bState_00003_00003_00003, bState_00004_00001_00001, bState_00004_00001_00002, bState_00004_00001_00003, bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003, bState_00004_00003_00001, bState_00004_00003_00002, bState_00004_00003_00003, bState_00005_00001_00001, bState_00005_00001_00002, bState_00005_00001_00003, bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003, bState_00005_00003_00001, bState_00005_00003_00002, bState_00005_00003_00003, bState_00006_00001_00001, bState_00006_00001_00002, bState_00006_00001_00003, bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003, bState_00006_00003_00001, bState_00006_00003_00002, bState_00006_00003_00003, bState_00007_00001_00001, bState_00007_00001_00002, bState_00007_00001_00003, bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003, bState_00007_00003_00001, bState_00007_00003_00002, bState_00007_00003_00003, bState_00008_00001_00001, bState_00008_00001_00002, bState_00008_00001_00003, bState_00008_00002_00001, bState_00008_00002_00002, bState_00008_00002_00003, bState_00008_00003_00001, bState_00008_00003_00002, bState_00008_00003_00003]
 **CONSTRAINTS**
-reify(watched-or({diseq(2,yPos_00001),diseq(1,xPos_00001)}), aux82)
-reify(watched-or({diseq(1,yPos_00001),diseq(2,xPos_00001)}), aux83)
-watched-or({diseq(2,yPos_00002),diseq(1,xPos_00002)})
-reify(watched-or({diseq(3,yPos_00002),diseq(1,xPos_00002)}), aux85)
-watched-or({diseq(1,yPos_00002),diseq(2,xPos_00002)})
-reify(watched-or({diseq(2,yPos_00002),diseq(2,xPos_00002)}), aux87)
-reify(watched-or({diseq(1,yPos_00002),diseq(3,xPos_00002)}), aux88)
-reify(watched-or({diseq(2,yPos_00003),diseq(1,xPos_00003)}), aux89)
-reify(watched-or({diseq(3,yPos_00003),diseq(1,xPos_00003)}), aux90)
-reify(watched-or({diseq(1,yPos_00003),diseq(2,xPos_00003)}), aux91)
-reify(watched-or({diseq(2,yPos_00003),diseq(2,xPos_00003)}), aux92)
-reify(watched-or({diseq(3,yPos_00003),diseq(2,xPos_00003)}), aux93)
-reify(watched-or({diseq(1,yPos_00003),diseq(3,xPos_00003)}), aux94)
-reify(watched-or({diseq(2,yPos_00003),diseq(3,xPos_00003)}), aux95)
-reify(watched-or({diseq(3,yPos_00003),diseq(3,xPos_00003)}), aux96)
-reify(watched-or({diseq(2,yPos_00004),diseq(1,xPos_00004)}), aux99)
-reify(watched-or({diseq(3,yPos_00004),diseq(1,xPos_00004)}), aux100)
-reify(watched-or({diseq(1,yPos_00004),diseq(2,xPos_00004)}), aux101)
-reify(watched-or({diseq(2,yPos_00004),diseq(2,xPos_00004)}), aux102)
-reify(watched-or({diseq(3,yPos_00004),diseq(2,xPos_00004)}), aux103)
-reify(watched-or({diseq(1,yPos_00004),diseq(3,xPos_00004)}), aux104)
-reify(watched-or({diseq(2,yPos_00004),diseq(3,xPos_00004)}), aux105)
-reify(watched-or({diseq(3,yPos_00004),diseq(3,xPos_00004)}), aux106)
-reify(watched-or({diseq(2,yPos_00005),diseq(1,xPos_00005)}), aux109)
-reify(watched-or({diseq(3,yPos_00005),diseq(1,xPos_00005)}), aux110)
-reify(watched-or({diseq(1,yPos_00005),diseq(2,xPos_00005)}), aux111)
-reify(watched-or({diseq(2,yPos_00005),diseq(2,xPos_00005)}), aux112)
-reify(watched-or({diseq(3,yPos_00005),diseq(2,xPos_00005)}), aux113)
-reify(watched-or({diseq(1,yPos_00005),diseq(3,xPos_00005)}), aux114)
-reify(watched-or({diseq(2,yPos_00005),diseq(3,xPos_00005)}), aux115)
-reify(watched-or({diseq(3,yPos_00005),diseq(3,xPos_00005)}), aux116)
-reify(watched-or({diseq(2,yPos_00006),diseq(1,xPos_00006)}), aux119)
-reify(watched-or({diseq(3,yPos_00006),diseq(1,xPos_00006)}), aux120)
-reify(watched-or({diseq(1,yPos_00006),diseq(2,xPos_00006)}), aux121)
-reify(watched-or({diseq(2,yPos_00006),diseq(2,xPos_00006)}), aux122)
-reify(watched-or({diseq(3,yPos_00006),diseq(2,xPos_00006)}), aux123)
-reify(watched-or({diseq(1,yPos_00006),diseq(3,xPos_00006)}), aux124)
-reify(watched-or({diseq(2,yPos_00006),diseq(3,xPos_00006)}), aux125)
-reify(watched-or({diseq(3,yPos_00006),diseq(3,xPos_00006)}), aux126)
-reify(watched-or({diseq(2,yPos_00007),diseq(1,xPos_00007)}), aux129)
-reify(watched-or({diseq(3,yPos_00007),diseq(1,xPos_00007)}), aux130)
-reify(watched-or({diseq(1,yPos_00007),diseq(2,xPos_00007)}), aux131)
-reify(watched-or({diseq(2,yPos_00007),diseq(2,xPos_00007)}), aux132)
-reify(watched-or({diseq(3,yPos_00007),diseq(2,xPos_00007)}), aux133)
-reify(watched-or({diseq(1,yPos_00007),diseq(3,xPos_00007)}), aux134)
-reify(watched-or({diseq(2,yPos_00007),diseq(3,xPos_00007)}), aux135)
-reify(watched-or({diseq(3,yPos_00007),diseq(3,xPos_00007)}), aux136)
-reify(watched-or({diseq(2,yPos_00008),diseq(1,xPos_00008)}), aux139)
-reify(watched-or({diseq(3,yPos_00008),diseq(1,xPos_00008)}), aux140)
-reify(watched-or({diseq(1,yPos_00008),diseq(2,xPos_00008)}), aux141)
-reify(watched-or({diseq(2,yPos_00008),diseq(2,xPos_00008)}), aux142)
-reify(watched-or({diseq(3,yPos_00008),diseq(2,xPos_00008)}), aux143)
-reify(watched-or({diseq(1,yPos_00008),diseq(3,xPos_00008)}), aux144)
-reify(watched-or({diseq(2,yPos_00008),diseq(3,xPos_00008)}), aux145)
-reify(watched-or({diseq(3,yPos_00008),diseq(3,xPos_00008)}), aux146)
-reify(gaceq(xPos_00006,xPos_00007), aux42)
-reify(gaceq(xPos_00007,xPos_00008), aux43)
-reify(gaceq(xPos_00004,xPos_00005), aux44)
-reify(gaceq(xPos_00005,xPos_00006), aux45)
-reify(gaceq(xPos_00002,xPos_00003), aux46)
-reify(gaceq(xPos_00003,xPos_00004), aux47)
-reify(w-literal(move_00000,2), aux48)
-reify(w-literal(move_00000,3), aux49)
-reify(w-literal(move_00006,4), aux50)
-reify(w-literal(move_00006,3), aux51)
-reify(w-literal(move_00006,2), aux52)
-reify(w-literal(move_00006,1), aux53)
-reify(w-literal(move_00005,4), aux54)
-reify(w-literal(move_00005,3), aux55)
-reify(w-literal(move_00005,2), aux56)
-reify(w-literal(move_00007,4), aux57)
-reify(w-literal(move_00007,3), aux58)
-reify(w-literal(move_00007,2), aux59)
-reify(w-literal(move_00007,1), aux60)
-reify(w-literal(move_00003,3), aux61)
-reify(w-literal(move_00003,2), aux62)
-reify(w-literal(move_00003,1), aux63)
-reify(w-literal(move_00003,4), aux64)
-reify(w-literal(move_00005,1), aux65)
-reify(w-literal(move_00004,4), aux66)
-reify(w-literal(move_00004,3), aux67)
-reify(w-literal(move_00004,2), aux68)
-reify(w-literal(move_00004,1), aux69)
-reify(w-literal(move_00002,4), aux70)
-reify(w-literal(move_00002,3), aux71)
-reify(w-literal(move_00002,2), aux72)
-reify(w-literal(move_00002,1), aux73)
-reify(gaceq(yPos_00002,yPos_00003), aux74)
-reify(gaceq(yPos_00006,yPos_00007), aux75)
-reify(gaceq(yPos_00005,yPos_00006), aux76)
-reify(gaceq(yPos_00004,yPos_00005), aux77)
-reify(gaceq(yPos_00003,yPos_00004), aux78)
-reify(gaceq(yPos_00007,yPos_00008), aux79)
-reify(w-literal(move_00001,2), aux80)
-reify(w-literal(move_00001,3), aux81)
-watched-or({diseq(2,yPos_00001),diseq(1,xPos_00001),w-literal(bState_00002_00002_00001,1)})
-ineq(aux82, !bState_00002_00002_00001, 0)
-watched-or({diseq(1,yPos_00001),diseq(2,xPos_00001),w-literal(bState_00002_00001_00002,1)})
-ineq(aux83, !bState_00002_00001_00002, 0)
-watched-or({diseq(2,yPos_00001),diseq(2,xPos_00001)})
-reifyimply(w-literal(yPos_00001,1), aux48)
-reifyimply(w-literal(xPos_00001,2), aux48)
-reifyimply(w-literal(xPos_00001,1), aux49)
-reifyimply(w-literal(yPos_00001,2), aux49)
-watched-or({diseq(2,yPos_00002),diseq(1,xPos_00002),w-literal(bState_00002_00002_00001,1)})
-watched-or({w-literal(bState_00002_00003_00001,1),diseq(3,yPos_00002),diseq(1,xPos_00002)})
-ineq(aux85, !bState_00002_00003_00001, 0)
-watched-or({diseq(1,yPos_00002),diseq(2,xPos_00002),w-literal(bState_00002_00001_00002,1)})
-watched-or({diseq(2,yPos_00002),diseq(2,xPos_00002),w-literal(bState_00002_00002_00002,1)})
-ineq(aux87, !bState_00002_00002_00002, 0)
-watched-or({diseq(3,yPos_00002),diseq(2,xPos_00002)})
-watched-or({diseq(1,yPos_00002),diseq(3,xPos_00002),w-literal(bState_00002_00001_00003,1)})
-ineq(aux88, !bState_00002_00001_00003, 0)
-watched-or({diseq(2,yPos_00002),diseq(3,xPos_00002)})
-watched-or({diseq(3,yPos_00002),diseq(3,xPos_00002)})
-reifyimply(gaceq(yPos_00001,yPos_00002), aux80)
-reifyimply(watchelement([bState_00002_00001_00002, 0, bState_00002_00002_00001, 0], aux15, 0), aux80)
-reifyimply(gaceq(xPos_00001,xPos_00002), aux81)
-reifyimply(watchelement([bState_00002_00002_00001, 0, 0, 0], aux15, 0), aux81)
-watched-or({diseq(2,yPos_00003),diseq(1,xPos_00003),w-literal(bState_00003_00002_00001,1)})
-reifyimply(gaceq(bState_00003_00002_00001,bState_00002_00002_00001), aux89)
-watched-or({diseq(3,yPos_00003),diseq(1,xPos_00003),w-literal(bState_00003_00003_00001,1)})
-reifyimply(gaceq(bState_00002_00003_00001,bState_00003_00003_00001), aux90)
-watched-or({diseq(1,yPos_00003),diseq(2,xPos_00003),w-literal(bState_00003_00001_00002,1)})
-reifyimply(gaceq(bState_00003_00001_00002,bState_00002_00001_00002), aux91)
-watched-or({diseq(2,yPos_00003),diseq(2,xPos_00003),w-literal(bState_00003_00002_00002,1)})
-reifyimply(gaceq(bState_00003_00002_00002,bState_00002_00002_00002), aux92)
-watched-or({diseq(3,yPos_00003),diseq(2,xPos_00003),w-literal(bState_00003_00003_00002,1)})
-ineq(aux93, !bState_00003_00003_00002, 0)
-watched-or({diseq(1,yPos_00003),diseq(3,xPos_00003),w-literal(bState_00003_00001_00003,1)})
-reifyimply(gaceq(bState_00003_00001_00003,bState_00002_00001_00003), aux94)
-watched-or({diseq(2,yPos_00003),diseq(3,xPos_00003),w-literal(bState_00003_00002_00003,1)})
-ineq(aux95, !bState_00003_00002_00003, 0)
-watched-or({diseq(3,yPos_00003),diseq(3,xPos_00003),w-literal(bState_00003_00003_00003,1)})
-ineq(aux96, !bState_00003_00003_00003, 0)
-ineq(aux73, aux46, 0)
-reifyimply(gaceq(yPos_00003,aux25), aux73)
-reifyimply(ineq(1, yPos_00002, -1), aux73)
-reifyimply(reify(watched-and({watchelement_undefzero([1, bState_00002_00001_00002, bState_00002_00001_00003, bState_00002_00002_00001], aux97, 1),w-inintervalset(aux25,[1,3])}), 0), aux73)
-ineq(aux72, aux74, 0)
-reifyimply(gaceq(xPos_00003,aux37), aux72)
-reifyimply(ineq(xPos_00002, 3, -1), aux72)
-reifyimply(reify(watched-and({watchelement([bState_00002_00001_00002, bState_00002_00001_00003, bState_00002_00002_00001, bState_00002_00002_00002, 0, bState_00002_00003_00001, 0], aux12, 1),w-inintervalset(aux37,[1,3])}), 0), aux72)
-ineq(aux71, aux46, 0)
-reifyimply(gaceq(yPos_00003,aux21), aux71)
-reifyimply(ineq(yPos_00002, 3, -1), aux71)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00002_00002_00001, bState_00002_00002_00002, 0, bState_00002_00003_00001, 0, 0], aux12, 1),w-inintervalset(aux21,[1,3])}), 0), aux71)
-ineq(aux70, aux74, 0)
-reifyimply(gaceq(xPos_00003,aux35), aux70)
-reifyimply(ineq(1, xPos_00002, -1), aux70)
-reifyimply(reify(watched-and({w-inintervalset(aux35,[1,3]),watchelement([1, bState_00002_00001_00002, bState_00002_00001_00003, bState_00002_00002_00001, bState_00002_00002_00002, 0], aux98, 1)}), 0), aux70)
-watched-or({diseq(2,yPos_00004),diseq(1,xPos_00004),w-literal(bState_00004_00002_00001,1)})
-reifyimply(gaceq(bState_00004_00002_00001,bState_00003_00002_00001), aux99)
-watched-or({diseq(3,yPos_00004),diseq(1,xPos_00004),w-literal(bState_00004_00003_00001,1)})
-reifyimply(gaceq(bState_00004_00003_00001,bState_00003_00003_00001), aux100)
-watched-or({diseq(1,yPos_00004),diseq(2,xPos_00004),w-literal(bState_00004_00001_00002,1)})
-reifyimply(gaceq(bState_00004_00001_00002,bState_00003_00001_00002), aux101)
-watched-or({diseq(2,yPos_00004),diseq(2,xPos_00004),w-literal(bState_00004_00002_00002,1)})
-reifyimply(gaceq(bState_00004_00002_00002,bState_00003_00002_00002), aux102)
-watched-or({diseq(3,yPos_00004),diseq(2,xPos_00004),w-literal(bState_00004_00003_00002,1)})
-reifyimply(gaceq(bState_00004_00003_00002,bState_00003_00003_00002), aux103)
-watched-or({diseq(1,yPos_00004),diseq(3,xPos_00004),w-literal(bState_00004_00001_00003,1)})
-reifyimply(gaceq(bState_00004_00001_00003,bState_00003_00001_00003), aux104)
-watched-or({diseq(2,yPos_00004),diseq(3,xPos_00004),w-literal(bState_00004_00002_00003,1)})
-reifyimply(gaceq(bState_00004_00002_00003,bState_00003_00002_00003), aux105)
-watched-or({diseq(3,yPos_00004),diseq(3,xPos_00004),w-literal(bState_00004_00003_00003,1)})
-reifyimply(gaceq(bState_00004_00003_00003,bState_00003_00003_00003), aux106)
-ineq(aux63, aux47, 0)
-reifyimply(gaceq(yPos_00004,aux26), aux63)
-reifyimply(ineq(1, yPos_00003, -1), aux63)
-reifyimply(reify(watched-and({w-inintervalset(aux26,[1,3]),watchelement_undefzero([1, bState_00003_00001_00002, bState_00003_00001_00003, bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003], aux107, 1)}), 0), aux63)
-ineq(aux62, aux78, 0)
-reifyimply(gaceq(xPos_00004,aux36), aux62)
-reifyimply(ineq(xPos_00003, 3, -1), aux62)
-reifyimply(reify(watched-and({w-inintervalset(aux36,[1,3]),watchelement_undefzero([bState_00003_00001_00002, bState_00003_00001_00003, bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003, bState_00003_00003_00001, bState_00003_00003_00002, bState_00003_00003_00003], aux11, 1)}), 0), aux62)
-ineq(aux61, aux47, 0)
-reifyimply(gaceq(yPos_00004,aux19), aux61)
-reifyimply(ineq(yPos_00003, 3, -1), aux61)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003, bState_00003_00003_00001, bState_00003_00003_00002, bState_00003_00003_00003], aux11, 1),w-inintervalset(aux19,[1,3])}), 0), aux61)
-ineq(aux64, aux78, 0)
-reifyimply(gaceq(xPos_00004,aux34), aux64)
-reifyimply(ineq(1, xPos_00003, -1), aux64)
-reifyimply(reify(watched-and({w-inintervalset(aux34,[1,3]),watchelement_undefzero([1, bState_00003_00001_00002, bState_00003_00001_00003, bState_00003_00002_00001, bState_00003_00002_00002, bState_00003_00002_00003, bState_00003_00003_00001, bState_00003_00003_00002], aux108, 1)}), 0), aux64)
-watched-or({diseq(2,yPos_00005),diseq(1,xPos_00005),w-literal(bState_00005_00002_00001,1)})
-reifyimply(gaceq(bState_00005_00002_00001,bState_00004_00002_00001), aux109)
-watched-or({diseq(3,yPos_00005),diseq(1,xPos_00005),w-literal(bState_00005_00003_00001,1)})
-reifyimply(gaceq(bState_00005_00003_00001,bState_00004_00003_00001), aux110)
-watched-or({diseq(1,yPos_00005),diseq(2,xPos_00005),w-literal(bState_00005_00001_00002,1)})
-reifyimply(gaceq(bState_00005_00001_00002,bState_00004_00001_00002), aux111)
-watched-or({diseq(2,yPos_00005),diseq(2,xPos_00005),w-literal(bState_00005_00002_00002,1)})
-reifyimply(gaceq(bState_00005_00002_00002,bState_00004_00002_00002), aux112)
-watched-or({diseq(3,yPos_00005),diseq(2,xPos_00005),w-literal(bState_00005_00003_00002,1)})
-reifyimply(gaceq(bState_00005_00003_00002,bState_00004_00003_00002), aux113)
-watched-or({diseq(1,yPos_00005),diseq(3,xPos_00005),w-literal(bState_00005_00001_00003,1)})
-reifyimply(gaceq(bState_00005_00001_00003,bState_00004_00001_00003), aux114)
-watched-or({diseq(2,yPos_00005),diseq(3,xPos_00005),w-literal(bState_00005_00002_00003,1)})
-reifyimply(gaceq(bState_00005_00002_00003,bState_00004_00002_00003), aux115)
-watched-or({diseq(3,yPos_00005),diseq(3,xPos_00005),w-literal(bState_00005_00003_00003,1)})
-reifyimply(gaceq(bState_00005_00003_00003,bState_00004_00003_00003), aux116)
-ineq(aux69, aux44, 0)
-reifyimply(gaceq(yPos_00005,aux27), aux69)
-reifyimply(ineq(1, yPos_00004, -1), aux69)
-reifyimply(reify(watched-and({watchelement_undefzero([1, bState_00004_00001_00002, bState_00004_00001_00003, bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003], aux117, 1),w-inintervalset(aux27,[1,3])}), 0), aux69)
-ineq(aux68, aux77, 0)
-reifyimply(gaceq(xPos_00005,aux41), aux68)
-reifyimply(ineq(xPos_00004, 3, -1), aux68)
-reifyimply(reify(watched-and({w-inintervalset(aux41,[1,3]),watchelement_undefzero([bState_00004_00001_00002, bState_00004_00001_00003, bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003, bState_00004_00003_00001, bState_00004_00003_00002, bState_00004_00003_00003], aux14, 1)}), 0), aux68)
-ineq(aux67, aux44, 0)
-reifyimply(gaceq(yPos_00005,aux20), aux67)
-reifyimply(ineq(yPos_00004, 3, -1), aux67)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003, bState_00004_00003_00001, bState_00004_00003_00002, bState_00004_00003_00003], aux14, 1),w-inintervalset(aux20,[1,3])}), 0), aux67)
-ineq(aux66, aux77, 0)
-reifyimply(gaceq(xPos_00005,aux32), aux66)
-reifyimply(ineq(1, xPos_00004, -1), aux66)
-reifyimply(reify(watched-and({w-inintervalset(aux32,[1,3]),watchelement_undefzero([1, bState_00004_00001_00002, bState_00004_00001_00003, bState_00004_00002_00001, bState_00004_00002_00002, bState_00004_00002_00003, bState_00004_00003_00001, bState_00004_00003_00002], aux118, 1)}), 0), aux66)
-watched-or({diseq(2,yPos_00006),diseq(1,xPos_00006),w-literal(bState_00006_00002_00001,1)})
-reifyimply(gaceq(bState_00006_00002_00001,bState_00005_00002_00001), aux119)
-watched-or({diseq(3,yPos_00006),diseq(1,xPos_00006),w-literal(bState_00006_00003_00001,1)})
-reifyimply(gaceq(bState_00006_00003_00001,bState_00005_00003_00001), aux120)
-watched-or({diseq(1,yPos_00006),diseq(2,xPos_00006),w-literal(bState_00006_00001_00002,1)})
-reifyimply(gaceq(bState_00006_00001_00002,bState_00005_00001_00002), aux121)
-watched-or({diseq(2,yPos_00006),diseq(2,xPos_00006),w-literal(bState_00006_00002_00002,1)})
-reifyimply(gaceq(bState_00006_00002_00002,bState_00005_00002_00002), aux122)
-watched-or({diseq(3,yPos_00006),diseq(2,xPos_00006),w-literal(bState_00006_00003_00002,1)})
-reifyimply(gaceq(bState_00006_00003_00002,bState_00005_00003_00002), aux123)
-watched-or({diseq(1,yPos_00006),diseq(3,xPos_00006),w-literal(bState_00006_00001_00003,1)})
-reifyimply(gaceq(bState_00006_00001_00003,bState_00005_00001_00003), aux124)
-watched-or({diseq(2,yPos_00006),diseq(3,xPos_00006),w-literal(bState_00006_00002_00003,1)})
-reifyimply(gaceq(bState_00006_00002_00003,bState_00005_00002_00003), aux125)
-watched-or({diseq(3,yPos_00006),diseq(3,xPos_00006),w-literal(bState_00006_00003_00003,1)})
-reifyimply(gaceq(bState_00006_00003_00003,bState_00005_00003_00003), aux126)
-ineq(aux65, aux45, 0)
-reifyimply(gaceq(yPos_00006,aux29), aux65)
-reifyimply(ineq(1, yPos_00005, -1), aux65)
-reifyimply(reify(watched-and({watchelement_undefzero([1, bState_00005_00001_00002, bState_00005_00001_00003, bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003], aux127, 1),w-inintervalset(aux29,[1,3])}), 0), aux65)
-ineq(aux56, aux76, 0)
-reifyimply(gaceq(xPos_00006,aux39), aux56)
-reifyimply(ineq(xPos_00005, 3, -1), aux56)
-reifyimply(reify(watched-and({w-inintervalset(aux39,[1,3]),watchelement_undefzero([bState_00005_00001_00002, bState_00005_00001_00003, bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003, bState_00005_00003_00001, bState_00005_00003_00002, bState_00005_00003_00003], aux13, 1)}), 0), aux56)
-ineq(aux55, aux45, 0)
-reifyimply(gaceq(yPos_00006,aux23), aux55)
-reifyimply(ineq(yPos_00005, 3, -1), aux55)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003, bState_00005_00003_00001, bState_00005_00003_00002, bState_00005_00003_00003], aux13, 1),w-inintervalset(aux23,[1,3])}), 0), aux55)
-ineq(aux54, aux76, 0)
-reifyimply(gaceq(xPos_00006,aux33), aux54)
-reifyimply(ineq(1, xPos_00005, -1), aux54)
-reifyimply(reify(watched-and({w-inintervalset(aux33,[1,3]),watchelement_undefzero([1, bState_00005_00001_00002, bState_00005_00001_00003, bState_00005_00002_00001, bState_00005_00002_00002, bState_00005_00002_00003, bState_00005_00003_00001, bState_00005_00003_00002], aux128, 1)}), 0), aux54)
-watched-or({diseq(2,yPos_00007),diseq(1,xPos_00007),w-literal(bState_00007_00002_00001,1)})
-reifyimply(gaceq(bState_00007_00002_00001,bState_00006_00002_00001), aux129)
-watched-or({diseq(3,yPos_00007),diseq(1,xPos_00007),w-literal(bState_00007_00003_00001,1)})
-reifyimply(gaceq(bState_00007_00003_00001,bState_00006_00003_00001), aux130)
-watched-or({diseq(1,yPos_00007),diseq(2,xPos_00007),w-literal(bState_00007_00001_00002,1)})
-reifyimply(gaceq(bState_00007_00001_00002,bState_00006_00001_00002), aux131)
-watched-or({diseq(2,yPos_00007),diseq(2,xPos_00007),w-literal(bState_00007_00002_00002,1)})
-reifyimply(gaceq(bState_00007_00002_00002,bState_00006_00002_00002), aux132)
-watched-or({diseq(3,yPos_00007),diseq(2,xPos_00007),w-literal(bState_00007_00003_00002,1)})
-reifyimply(gaceq(bState_00007_00003_00002,bState_00006_00003_00002), aux133)
-watched-or({diseq(1,yPos_00007),diseq(3,xPos_00007),w-literal(bState_00007_00001_00003,1)})
-reifyimply(gaceq(bState_00007_00001_00003,bState_00006_00001_00003), aux134)
-watched-or({diseq(2,yPos_00007),diseq(3,xPos_00007),w-literal(bState_00007_00002_00003,1)})
-reifyimply(gaceq(bState_00007_00002_00003,bState_00006_00002_00003), aux135)
-watched-or({diseq(3,yPos_00007),diseq(3,xPos_00007),w-literal(bState_00007_00003_00003,1)})
-reifyimply(gaceq(bState_00007_00003_00003,bState_00006_00003_00003), aux136)
-ineq(aux53, aux42, 0)
-reifyimply(gaceq(yPos_00007,aux28), aux53)
-reifyimply(ineq(1, yPos_00006, -1), aux53)
-reifyimply(reify(watched-and({watchelement_undefzero([1, bState_00006_00001_00002, bState_00006_00001_00003, bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003], aux137, 1),w-inintervalset(aux28,[1,3])}), 0), aux53)
-ineq(aux52, aux75, 0)
-reifyimply(gaceq(xPos_00007,aux38), aux52)
-reifyimply(ineq(xPos_00006, 3, -1), aux52)
-reifyimply(reify(watched-and({w-inintervalset(aux38,[1,3]),watchelement_undefzero([bState_00006_00001_00002, bState_00006_00001_00003, bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003, bState_00006_00003_00001, bState_00006_00003_00002, bState_00006_00003_00003], aux17, 1)}), 0), aux52)
-ineq(aux51, aux42, 0)
-reifyimply(gaceq(yPos_00007,aux24), aux51)
-reifyimply(ineq(yPos_00006, 3, -1), aux51)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003, bState_00006_00003_00001, bState_00006_00003_00002, bState_00006_00003_00003], aux17, 1),w-inintervalset(aux24,[1,3])}), 0), aux51)
-ineq(aux50, aux75, 0)
-reifyimply(gaceq(xPos_00007,aux30), aux50)
-reifyimply(ineq(1, xPos_00006, -1), aux50)
-reifyimply(reify(watched-and({w-inintervalset(aux30,[1,3]),watchelement_undefzero([1, bState_00006_00001_00002, bState_00006_00001_00003, bState_00006_00002_00001, bState_00006_00002_00002, bState_00006_00002_00003, bState_00006_00003_00001, bState_00006_00003_00002], aux138, 1)}), 0), aux50)
-ineq(aux139, bState_00007_00002_00001, 0)
-ineq(aux140, bState_00007_00003_00001, 0)
-ineq(aux141, bState_00007_00001_00002, 0)
-ineq(aux142, bState_00007_00002_00002, 0)
-ineq(aux143, bState_00007_00003_00002, 0)
-ineq(aux144, bState_00007_00001_00003, 0)
-ineq(aux145, bState_00007_00002_00003, 0)
-ineq(aux146, bState_00007_00003_00003, 0)
-ineq(aux60, aux43, 0)
-reifyimply(gaceq(yPos_00008,aux18), aux60)
-reifyimply(ineq(1, yPos_00007, -1), aux60)
-reifyimply(reify(watched-and({watchelement_undefzero([1, bState_00007_00001_00002, bState_00007_00001_00003, bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003], aux147, 1),w-inintervalset(aux18,[1,3])}), 0), aux60)
-ineq(aux59, aux79, 0)
-reifyimply(gaceq(xPos_00008,aux40), aux59)
-reifyimply(ineq(xPos_00007, 3, -1), aux59)
-reifyimply(reify(watched-and({w-inintervalset(aux40,[1,3]),watchelement_undefzero([bState_00007_00001_00002, bState_00007_00001_00003, bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003, bState_00007_00003_00001, bState_00007_00003_00002, bState_00007_00003_00003], aux16, 1)}), 0), aux59)
-ineq(aux58, aux43, 0)
-reifyimply(gaceq(yPos_00008,aux22), aux58)
-reifyimply(ineq(yPos_00007, 3, -1), aux58)
-reifyimply(reify(watched-and({watchelement_undefzero([bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003, bState_00007_00003_00001, bState_00007_00003_00002, bState_00007_00003_00003], aux16, 1),w-inintervalset(aux22,[1,3])}), 0), aux58)
-ineq(aux57, aux79, 0)
-reifyimply(gaceq(xPos_00008,aux31), aux57)
-reifyimply(ineq(1, xPos_00007, -1), aux57)
-reifyimply(reify(watched-and({w-inintervalset(aux31,[1,3]),watchelement_undefzero([1, bState_00007_00001_00002, bState_00007_00001_00003, bState_00007_00002_00001, bState_00007_00002_00002, bState_00007_00002_00003, bState_00007_00003_00001, bState_00007_00003_00002], aux148, 1)}), 0), aux57)
-weightedsumleq([1,3,1],[-7,yPos_00002,xPos_00002],aux97)
-weightedsumgeq([1,3,1],[-7,yPos_00002,xPos_00002],aux97)
-weightedsumleq([1,3,1],[-5,yPos_00002,xPos_00002],aux98)
-weightedsumgeq([1,3,1],[-5,yPos_00002,xPos_00002],aux98)
-weightedsumleq([1,3,1],[-7,yPos_00003,xPos_00003],aux107)
-weightedsumgeq([1,3,1],[-7,yPos_00003,xPos_00003],aux107)
-weightedsumleq([1,3,1],[-5,yPos_00003,xPos_00003],aux108)
-weightedsumgeq([1,3,1],[-5,yPos_00003,xPos_00003],aux108)
-weightedsumleq([1,3,1],[-7,yPos_00004,xPos_00004],aux117)
-weightedsumgeq([1,3,1],[-7,yPos_00004,xPos_00004],aux117)
-weightedsumleq([1,3,1],[-5,yPos_00004,xPos_00004],aux118)
-weightedsumgeq([1,3,1],[-5,yPos_00004,xPos_00004],aux118)
-weightedsumleq([1,3,1],[-7,yPos_00005,xPos_00005],aux127)
-weightedsumgeq([1,3,1],[-7,yPos_00005,xPos_00005],aux127)
-weightedsumleq([1,3,1],[-5,yPos_00005,xPos_00005],aux128)
-weightedsumgeq([1,3,1],[-5,yPos_00005,xPos_00005],aux128)
-weightedsumleq([1,3,1],[-7,yPos_00006,xPos_00006],aux137)
-weightedsumgeq([1,3,1],[-7,yPos_00006,xPos_00006],aux137)
-weightedsumleq([1,3,1],[-5,yPos_00006,xPos_00006],aux138)
-weightedsumgeq([1,3,1],[-5,yPos_00006,xPos_00006],aux138)
-weightedsumleq([1,3,1],[-7,yPos_00007,xPos_00007],aux147)
-weightedsumgeq([1,3,1],[-7,yPos_00007,xPos_00007],aux147)
-weightedsumleq([1,3,1],[-5,yPos_00007,xPos_00007],aux148)
-weightedsumgeq([1,3,1],[-5,yPos_00007,xPos_00007],aux148)
-weightedsumleq([1,3,1],[-4,yPos_00003,xPos_00003],aux11)
-weightedsumgeq([1,3,1],[-4,yPos_00003,xPos_00003],aux11)
-weightedsumleq([1,3,1],[-4,yPos_00002,xPos_00002],aux12)
-weightedsumgeq([1,3,1],[-4,yPos_00002,xPos_00002],aux12)
-weightedsumleq([1,3,1],[-4,yPos_00005,xPos_00005],aux13)
-weightedsumgeq([1,3,1],[-4,yPos_00005,xPos_00005],aux13)
-weightedsumleq([1,3,1],[-4,yPos_00004,xPos_00004],aux14)
-weightedsumgeq([1,3,1],[-4,yPos_00004,xPos_00004],aux14)
-weightedsumleq([1,3,1],[-4,yPos_00001,xPos_00001],aux15)
-weightedsumgeq([1,3,1],[-4,yPos_00001,xPos_00001],aux15)
-weightedsumleq([1,3,1],[-4,yPos_00007,xPos_00007],aux16)
-weightedsumgeq([1,3,1],[-4,yPos_00007,xPos_00007],aux16)
-weightedsumleq([1,3,1],[-4,yPos_00006,xPos_00006],aux17)
-weightedsumgeq([1,3,1],[-4,yPos_00006,xPos_00006],aux17)
-sumleq([-1,yPos_00007],aux18)
-sumgeq([-1,yPos_00007],aux18)
-sumleq([1,yPos_00003],aux19)
-sumgeq([1,yPos_00003],aux19)
-sumleq([1,yPos_00004],aux20)
-sumgeq([1,yPos_00004],aux20)
-sumleq([1,yPos_00002],aux21)
-sumgeq([1,yPos_00002],aux21)
-sumleq([1,yPos_00007],aux22)
-sumgeq([1,yPos_00007],aux22)
-sumleq([1,yPos_00005],aux23)
-sumgeq([1,yPos_00005],aux23)
-sumleq([1,yPos_00006],aux24)
-sumgeq([1,yPos_00006],aux24)
-sumleq([-1,yPos_00002],aux25)
-sumgeq([-1,yPos_00002],aux25)
-sumleq([-1,yPos_00003],aux26)
-sumgeq([-1,yPos_00003],aux26)
-sumleq([-1,yPos_00004],aux27)
-sumgeq([-1,yPos_00004],aux27)
-sumleq([-1,yPos_00006],aux28)
-sumgeq([-1,yPos_00006],aux28)
-sumleq([-1,yPos_00005],aux29)
-sumgeq([-1,yPos_00005],aux29)
-sumleq([-1,xPos_00006],aux30)
-sumgeq([-1,xPos_00006],aux30)
-sumleq([-1,xPos_00007],aux31)
-sumgeq([-1,xPos_00007],aux31)
-sumleq([-1,xPos_00004],aux32)
-sumgeq([-1,xPos_00004],aux32)
-sumleq([-1,xPos_00005],aux33)
-sumgeq([-1,xPos_00005],aux33)
-sumleq([-1,xPos_00003],aux34)
-sumgeq([-1,xPos_00003],aux34)
-sumleq([-1,xPos_00002],aux35)
-sumgeq([-1,xPos_00002],aux35)
-sumleq([1,xPos_00003],aux36)
-sumgeq([1,xPos_00003],aux36)
-sumleq([1,xPos_00002],aux37)
-sumgeq([1,xPos_00002],aux37)
-sumleq([1,xPos_00006],aux38)
-sumgeq([1,xPos_00006],aux38)
-sumleq([1,xPos_00005],aux39)
-sumgeq([1,xPos_00005],aux39)
-sumleq([1,xPos_00007],aux40)
-sumgeq([1,xPos_00007],aux40)
-sumleq([1,xPos_00004],aux41)
-sumgeq([1,xPos_00004],aux41)
-reifyimply(sumleq([1,xPos_00001],xPos_00002), aux80)
-reifyimply(sumgeq([1,xPos_00001],xPos_00002), aux80)
-reifyimply(sumleq([1,yPos_00001],yPos_00002), aux81)
-reifyimply(sumgeq([1,yPos_00001],yPos_00002), aux81)
-**EOF**
+false()**EOF**
