@@ -1,0 +1,55 @@
+language ESSENCE' 1.0
+
+given p: int            $ WIDTH
+given q: int            $ HEIGHT
+given a: int            $ Starting x position
+given b: int            $ Starting y position
+given grid: matrix indexed by [int(1..p), int(1..q)] of bool
+
+
+letting WIDTH be domain int(1..p)
+letting HEIGHT be domain int(1..q)
+letting noSteps=p*q
+letting MOVES be domain int(1,2,3,4)        $ 1 = UP, 2 = RIGHT, 3 = DOWN, 4 = LEFT
+letting STEPS be domain int(0..noSteps)
+
+find move : matrix indexed by [STEPS] of MOVES
+find xPos: matrix indexed by [STEPS] of WIDTH
+find yPos: matrix indexed by [STEPS] of HEIGHT
+find bState: matrix indexed by [STEPS, WIDTH, HEIGHT] of bool
+
+such that
+xPos[0] = a,
+yPos[0] = b,
+
+forAll i : WIDTH .
+    forAll j : HEIGHT .
+        (i = a /\ j =b) ->
+            (bState[0, i, j] = true) \/
+        (i != a /\ j !=b) ->
+            ((bState[0, i, j]) <-> (grid[i, j])),
+
+ 
+$$ moving the token
+forAll i : STEPS .
+    (
+        $ UP
+        (   ((move[i] = 1) /\ (yPos[i]-1 > 0) /\ (bState[i, xPos[i], yPos[i]-1] = false)) ->
+                    (bState[i+1, xPos[i], yPos[i]-1] = true)) /\
+
+        $ RIGHT
+        (    ((move[i] = 2) /\ (xPos[i]+1 < p+1) /\ (bState[i,xPos[i]+1, yPos[i]] = false)) ->
+                    (bState[i+1, xPos[i]+1, yPos[i]] = true)) /\
+
+        $ DOWN
+        (   ((move[i] = 3) /\ (yPos[i]+1 < q+1) /\ (bState[i, xPos[i], yPos[i]+1] = false)) ->
+                    (bState[i+1, xPos[i], yPos[i]+1] = true)) /\
+
+        $ LEFT
+        (   ((move[i] = 4) /\ (xPos[i]-1 > 0) /\ (bState[i, xPos[i]-1, yPos[i]] = false)) ->
+                    (bState[i+1, xPos[i]-1, yPos[i]] = true))
+    ),
+
+forAll i : WIDTH .
+    forAll j : HEIGHT .
+        bState[noSteps, i, j] = true
