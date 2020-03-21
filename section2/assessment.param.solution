@@ -1,6 +1,6 @@
 language ESSENCE' 1.0
 $ Minion SolverNodes: 5
-$ Minion SolverTotalTime: 0.223156
+$ Minion SolverTotalTime: 0.209211
 $ Minion SolverTimeOut: 0
 $ Savile Row TotalTime: 1.026
 letting bState be [[[true, false, false], 

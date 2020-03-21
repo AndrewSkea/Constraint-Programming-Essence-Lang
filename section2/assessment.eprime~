@@ -1,0 +1,66 @@
+language ESSENCE' 1.0
+
+given p: int            $ WIDTH
+given q: int            $ HEIGHT
+given a: int            $ Starting x position
+given b: int            $ Starting y position
+given grid: matrix indexed by [int(1..p), int(1..q)] of bool
+
+letting WIDTH be domain int(1..p)
+letting HEIGHT be domain int(1..q)
+letting noSteps=p*q-1
+letting MOVES be domain int(1,2,3,4)  $ 1 = UP, 2 = RIGHT, 3 = DOWN, 4 = LEFT
+letting STEPS be domain int(0..noSteps)
+
+find move : matrix indexed by [int(0..noSteps-1)] of MOVES
+find xPos: matrix indexed by [int(0..noSteps)] of WIDTH
+find yPos: matrix indexed by [int(0..noSteps)] of HEIGHT
+find bState: matrix indexed by [int(0..noSteps), HEIGHT, WIDTH] of bool
+
+such that
+xPos[0] = a,
+yPos[0] = b,
+
+forAll i : WIDTH .
+    forAll j : HEIGHT .
+        ((i = a /\ j = b) ->
+            (bState[0, b, a] = true)) /\
+       ( !(i = a /\ j = b) ->
+            ((bState[0, j, i]) <-> (grid[j, i]))),
+
+$$ moving the token
+forAll i : int(0..noSteps-1) .
+    (
+        $ Make sure all but one are the same
+         (forAll g : WIDTH .
+                forAll h : HEIGHT .
+                    (((xPos[i+1] = g /\ yPos[i+1] = h) ->
+                            (bState[i+1, h, g] = true)) /\
+                    (!(xPos[i+1] = g /\ yPos[i+1] = h) ->
+                        ((bState[i, h, g]) = (bState[i+1, h, g]))) )  ) /\
+        $ UP
+        ((move[i] = 1) -> (( yPos[i]-1 > 0) /\ 
+                            (bState[i, yPos[i]-1, xPos[i]] = false) /\
+                            (yPos[i+1] = yPos[i]-1) /\
+                            (xPos[i+1] = xPos[i]) )) /\
+        $ RIGHT
+        ((move[i] = 2) -> (( xPos[i]+1 < p+1) /\ 
+                            (bState[i, yPos[i], xPos[i]+1] = false) /\
+                            (xPos[i+1] = xPos[i]+1) /\
+                            (yPos[i+1] = yPos[i]) )) /\
+        $ DOWN
+        ((move[i] = 3) -> (( yPos[i]+1 < q+1) /\ 
+                            (bState[i, yPos[i]+1, xPos[i]] = false) /\
+                            (yPos[i+1] = yPos[i]+1) /\
+                            (xPos[i+1] = xPos[i]) )) /\
+        $ LEFT
+        ((move[i] = 4) -> (( xPos[i]-1 > 0) /\ 
+                            (bState[i, yPos[i], xPos[i]-1] = false) /\
+                            (xPos[i+1] = xPos[i]-1) /\
+                            (yPos[i+1] = yPos[i]) ))
+    ),
+
+$$ Check at the end to see if all states are now true
+forAll i : WIDTH .
+    forAll j : HEIGHT .
+        bState[noSteps, j, i] = true
